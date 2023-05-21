@@ -16,7 +16,12 @@ export default function Deck() {
         <>
         <ContainerStyled> 
             <Header />
-            {cards.map((card) => <Flashcard key={cards.id} card={card} increaseScore={increaseScore}/>)}
+            {cards.map((card) => 
+                <Flashcard 
+                    key={cards.id} 
+                    card={card} 
+                    increaseScore={increaseScore}
+                />)}
             <Footer currentScore={score} />
         </ContainerStyled>
         </>

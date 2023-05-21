@@ -4,7 +4,7 @@ import seta_virar from '../assets/seta_virar.png';
 import IconState from './IconState';
 import { GREEN, RED, ORANGE, GRAY } from '../constants/colors';
 
-export default function Flashcard({ card, increaseScore }) {
+export default function Flashcard({ card, increaseScore, addAnswer }) {
 	const { question, answer } = card;
 	const [showCard, setShowCard] = useState(true); 
 	const [showQuestion, setShowQuestion] = useState(false); 
@@ -31,6 +31,7 @@ export default function Flashcard({ card, increaseScore }) {
         setFinished(true);
         setStatus(answerStatus);
         increaseScore();
+		addAnswer(status);
     }
 
 	return (
