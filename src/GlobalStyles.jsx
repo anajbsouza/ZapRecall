@@ -32,8 +32,12 @@ import { createGlobalStyle } from 'styled-components'
         footer, header, hgroup, menu, nav, section {
             display: block;
         }
+        h1 {
+            font-family: 'Righteous', cursive;
+        }
         body {
             line-height: 1;
+            font-family: 'Recursive', sans-serif;
         }
         ol, ul {
             list-style: none;
