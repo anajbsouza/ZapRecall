@@ -13,7 +13,7 @@ export default function HomePage({ setWelcome }) {
             <div>
                 <img src={logo} alt={"logo"} />
                 <h1>ZapRecall</h1>
-                <button onClick={() => ChangePage()}><h2>Iniciar Recall</h2></button>
+                <button onClick={() => ChangePage()} data-test="start-btn"><h2>Iniciar Recall</h2></button>
             </div>
         </ContainerStyled>
     )
