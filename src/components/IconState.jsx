@@ -9,7 +9,7 @@ export default function IconState({ status, funcShowQuestion }) {
             {status === "zap" && <img src={icone_certo} alt="Ícone zap" />}
             {status === "right" && <img src={icone_quase} alt="Ícone certo" />}
             {status === "wrong" && <img src={icone_erro} alt="Ícone errado" />}
-            {status === "not answered" && <img onClick={funcShowQuestion} src={seta_play} alt="Ícone play" />}
+            {status === "not answered" && <img onClick={funcShowQuestion} src={seta_play} alt="Ícone play" data-test="play-btn"/>}
         </>
     )
 }
